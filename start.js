@@ -12,7 +12,7 @@
     const formElem = document.getElementById('form');
     /*
      * MISSION III: Pre-filling the form
-     * 1. Pre-fil the form with the hero's name and the hero's superpower
+     * 1. Pre-fill the form with the hero's name and the hero's superpower
      * 2. Call the "showForm" function to display the form
      * 3. Set the "selectedHero" variable to be equal to "hero" object. The "selectedHero" will be used in the other missions
      */
@@ -83,9 +83,6 @@
 
     const heroIndex = heroes.findIndex((hero) => hero.id === selectedHero.id);
     heroes.splice(heroIndex, 1);
-
-    clearHeroElements();
-    displayHeroes(heroes);
 
     clearHeroElements();
     displayHeroes(heroes);

@@ -14,7 +14,8 @@
      * MISSION III: Pre-filling the form
      * 1. Pre-fill the form with the hero's name and the hero's superpower
      * 2. Call the "showForm" function to display the form
-     * 3. Set the "selectedHero" variable to be equal to "hero" object. The "selectedHero" will be used in the other missions
+     * 3. Set the "selectedHero" variable, which has been declared at the beginning of the file,
+     *    to be equal to the "hero" object. The "selectedHero" will be used in the other missions
      */
   }
 
@@ -63,7 +64,7 @@
     /*
      * MISSION IV: Updating the hero with the new information
      * 1. Send a PUT request which consists of the hero information to the back-end to update the hero
-     *   1.1 Use the "updateHero" function and pass the "selectedHero" as its parameter
+     *   1.1 Use the "updateHero" function, declared in the apis.js file, and pass the "selectedHero" as its parameter
      * Note: Don't forget that it's an asynchronous function, therefore, you need to use the "await" keyword
      */
 
@@ -77,7 +78,7 @@
     /*
      * MISSION V: Deleting the selected hero
      * 1. Send a DELETE request along with the hero id
-     *   1.1 Use the "deleteHero" function and pass the selected hero's id as its parameter
+     *   1.1 Use the "deleteHero" function, declared in the apis.js file, and pass the selected hero's id as its parameter
      * Note: Don't forget that it's an asynchronous function, therefore, you need to use the "await" keyword
      */
 
@@ -107,7 +108,8 @@
     /*
      * MISSION I: Fetching all heroes from the back-end
      * 1. Use the "getAllHeroes" function to fetch all existing heroes
-     * 2. Set the result to the "heroes" variable
+     * 2. Set the result to the "heroes" variable. Note that the variable has been declared at the beginning of the file,
+     *    thus, we should update its value instead of creating a new one
      * Note: Don't forget that the "getAllHeroes" is an asynchronous function, therefore, you need to use the "await" keyword
      */
 
